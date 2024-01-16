@@ -1,0 +1,61 @@
+% Unofficial TRIUMF Letterhead LaTeX template
+% Derek Fujimoto
+% Dec 2023
+%
+% 	Compile with lualatex
+%	You'll need the following fonts:
+%		Helvetica Neue Light
+%		HelveticaNeueMedium
+%	Both of which can be installed from this site:
+%
+%	https://www.cufonfonts.com/font/helvetica-neue-55
+%
+\documentclass{triumf_beamer}
+
+% Load Packages
+% \usepackage{mathtools}               % math
+% \usepackage{amssymb}                 % math
+
+% grid for planning - uncomment to use
+% \usepackage[texcoord,grid,gridunit=mm,gridcolor=red!10,subgridcolor=green!10]{eso-pic}
+
+\begin{document}
+    % title slide
+    % usage: \maketitleslide{title}{date}{name}{image path}
+    \maketitleslide {A presentation title that is nice and descriptive}
+                    {\today}
+                    {D Fujimoto}
+                    {cyc1.jpg}
+
+    % slide deck body
+    \input body.tex
+
+    % Conclusion
+    % usage: \makebrandedslide{image path}{additional text}
+    % Note: command doesn't like whitespace lines
+    \makebrandedslide{paperclips.jpg}{
+        \begin{textblock*}{85mm}(5mm,30mm)
+        \begin{itemize}
+            \item[$\rightarrow$] Conclusion 1
+            \item[$\rightarrow$] Conclusion 2
+            \item[$\rightarrow$] Conclusion 3
+        \end{itemize}
+        \end{textblock*}
+    }
+
+    % backup slides
+    \appendix
+    \backupbegin
+    \input{backup.tex}
+    \backupend
+
+\end{document}
+
+
+%\begin{figure}[h]
+%    \centering
+%    \includegraphics[keepaspectratio=true,width=9cm,trim= 0cm 0cm 0cm 0cm, clip=true]{}
+%    \caption{}
+%    \label{}
+%\end{figure}
+% trim note: l b r t

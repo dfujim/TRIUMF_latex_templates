@@ -1,0 +1,32 @@
+% Unofficial TRIUMF Letterhead LaTeX template
+% Derek Fujimoto
+% Dec 2023
+%
+% 	Compile with lualatex
+%	You'll need the following fonts:
+%		Helvetica Neue Light
+%		HelveticaNeueHeavy
+%	Both of which can be installed from this site:
+%
+%	https://www.cufonfonts.com/font/helvetica-neue-55
+%
+\documentclass{triumf_letterhead}
+
+\usepackage{lipsum}
+
+\name{Richard}{Feynman}
+\email{rfeynman@triumf.ca}
+\extension{0000}
+\salutation{Dear Dr. Bohr}
+
+\begin{document}
+
+	\makeheader
+	\makefooter
+
+	\lipsum[0-5]
+
+	\makesignature
+
+\end{document}
+
