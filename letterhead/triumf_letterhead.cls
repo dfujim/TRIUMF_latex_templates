@@ -62,7 +62,7 @@
     \color{black}
     \today \par
     \bigskip
-    \@salutation,\par
+    \@salutation\par
     \bigskip
 }
 
