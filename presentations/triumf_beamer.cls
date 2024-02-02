@@ -29,8 +29,8 @@
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{footline}[frame number]
 \setbeamerfont{frametitle}{size=\LARGE}
-\setbeamercolor{frametitle}{fg=Black}
-\setbeamercolor{titlelike}{fg=Black}
+\setbeamercolor{frametitle}{fg=black}
+\setbeamercolor{titlelike}{fg=black}
 
 \newcommand{\backupbegin}{
    \newcounter{finalframe}
