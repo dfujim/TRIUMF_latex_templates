@@ -9,7 +9,7 @@
 \RequirePackage[margin=2.5cm, top=1cm, bottom=1.5cm]{geometry}
 \RequirePackage{graphicx}
 \RequirePackage{fancyhdr}
-\RequirePackage[unicode, colorlinks=true, allcolors=linkcolor]{hyperref}
+\RequirePackage[unicode, colorlinks=true, allcolors=blue]{hyperref}
 
 % set font style
 \setmainfont{Helvetica Neue Light}
